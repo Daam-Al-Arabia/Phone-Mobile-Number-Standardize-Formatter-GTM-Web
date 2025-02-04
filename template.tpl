@@ -1,4 +1,4 @@
-﻿___TERMS_OF_SERVICE___
+___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
@@ -113,7 +113,9 @@ const replaceAll = function(str, oldstr, newstr) {
   
   if (data.removeBrackets) {valueToFormat = replaceAll(replaceAll(valueToFormat, '(', ''), ')', '');}
   if (data.removeDashes) {valueToFormat = replaceAll(valueToFormat, '-', '');}
-  if (data.addPrefix) {valueToFormat = data.prefixToAdd + valueToFormat;}
+  if (data.addPrefix) {
+	if (valueToFormat.indexOf(data.prefixToAdd) !== 0) {valueToFormat = data.prefixToAdd + valueToFormat; }
+	}
 
 return valueToFormat;
 
@@ -167,6 +169,4 @@ scenarios: []
 
 ___NOTES___
 
-Created on 8/15/2022, 5:25:17 PM
-
-
+Created on 4/02/2025, 1:25:17 PM
