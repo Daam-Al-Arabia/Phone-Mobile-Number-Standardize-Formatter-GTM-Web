@@ -2,3 +2,5 @@ homepage: "http://daam.com.sa/"
 versions:
   - sha: 33b4243a809da1656e7c47950b4647b897387abe
     changeNotes: Initial release.
+  - sha: 1f113bc7930bbec546a30af4b5e79675e35bb21a
+    changeNotes: Handle a case if the prefix already exists.
